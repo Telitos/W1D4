@@ -39,7 +39,7 @@ a specific pair of elements a and b as its two arguments.
 
 var advancedSorting = students.sort(function (a,b) {
   if (a.name === b.name) {
-    return a.age > b.age
+    return a.age < b.age
   } else {
     return a.name > b.name
   }
