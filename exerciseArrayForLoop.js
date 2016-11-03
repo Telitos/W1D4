@@ -4,10 +4,11 @@ function findWaldo(arr, found) {
     if (person === "Waldo")
       found(index)
   })
-}
+};
 
 function actionWhenFound(location) {
   console.log("Found him at: " + location + "!");
-}
+};
+
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
