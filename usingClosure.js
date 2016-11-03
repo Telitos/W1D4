@@ -4,7 +4,7 @@
 */
 
 const loadedDie = (function () {
-  let roll = 0
+  let roll = - 1
   let list = [5, 4, 6, 1, 6, 4, 2, 3, 3, 5];
 
 
