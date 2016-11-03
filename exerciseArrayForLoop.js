@@ -1,15 +1,13 @@
 // The second argument/parameter is expected to be a function
 function findWaldo(arr, found) {
-  location = 0
-  arr.forEach(function(person) {
+  arr.forEach(function(person, index) {
     if (person === "Waldo")
-      found(location)
-    location ++
+      found(index)
   })
 }
 
-function actionWhenFound(x) {
-  console.log("Found him at: " + x + "!");
+function actionWhenFound(location) {
+  console.log("Found him at: " + location + "!");
 }
 
-findWaldo(["Waldo", "Alice", "Bob", "Winston"], actionWhenFound);
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
