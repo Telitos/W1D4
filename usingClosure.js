@@ -20,7 +20,6 @@ console.log(loadedDie());  // 6
 
 
 
-
 const countdownGenerator = function (x) {
  let timeLeft = x
 
